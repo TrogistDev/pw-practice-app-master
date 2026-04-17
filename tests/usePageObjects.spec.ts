@@ -38,3 +38,9 @@ test('Date Picker @many', async ({page}) => {
   await pm.onDatePickerPage().selectCommonDatePickerDateFromToday(7)
   await pm.onDatePickerPage().selectDatePickerWithRangeFromToday(2, 5)
 })
+
+test.only('Test using argos CI', async ({page})=> {
+  const pm = new PageManager(page)
+   await pm.navigateTo().formLayoutPage()
+   await pm.navigateTo().datePickerPage()
+})
