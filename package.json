@@ -9,11 +9,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "test": "npx playwright test usePageObjects.spec.ts --project=chromium"
-    ,"urltestENV": "URL=http://localhost:4200 npm run test"
-
+    "test": "npx playwright test usePageObjects.spec.ts --project=chromium",
+    "urltestENV": "URL=http://localhost:4200 npm run test"
   },
-  
   "dependencies": {
     "@angular/animations": "^14.2.12",
     "@angular/cdk": "14.2.7",
@@ -69,6 +67,7 @@
     "@angular/cli": "^14.2.10",
     "@angular/compiler-cli": "^14.2.12",
     "@angular/language-service": "14.2.12",
+    "@argos-ci/playwright": "^6.6.2",
     "@faker-js/faker": "^10.4.0",
     "@fortawesome/fontawesome-free": "^5.2.0",
     "@playwright/test": "^1.58.2",
